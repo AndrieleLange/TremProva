@@ -11,6 +11,14 @@ public class Vagao{
         proxIdent = proxIdent + 1;
     }
 
+    //questão 1
+    public Vagao(){
+        this.identificador = proxIdent;
+        this.descricao = "Não informado";
+        this.capacidadeCarga = 5000;
+        proxIdent = proxIdent + 1;
+    }
+
     public int getIdentificador() {
         return identificador;
     }
@@ -21,6 +29,11 @@ public class Vagao{
 
     public double getCapacidadeCarga() {
         return capacidadeCarga;
+    }
+
+    //questão 2
+    public static int getProxIdent(){
+        return proxIdent;
     }
 
     @Override
