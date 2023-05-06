@@ -14,7 +14,7 @@ public class VagaoRefrigerado extends Vagao {
 
     @Override
     public String toString() {
-        return super.toString() + "\n temperatura=" + temperatura;
+        return super.toString() + " temperatura=" + temperatura + "\n";
     }
     
     

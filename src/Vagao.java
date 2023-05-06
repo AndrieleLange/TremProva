@@ -39,7 +39,7 @@ public class Vagao{
     @Override
     public String toString() {
         return "\n Vagao\n identificador=" + identificador + "\n descricao=" + descricao + "\n capacidadeCarga="
-                + capacidadeCarga;
+                + capacidadeCarga + "\n";
     }
 
     /**
