@@ -41,5 +41,12 @@ public class CadastroVagoes {
         }
         return peloPesox;
     }
+
+    @Override
+    public String toString() {
+        return "Vagões no trem " + vagoes + "]";
+    }
+
+    
     
 }

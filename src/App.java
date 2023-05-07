@@ -17,5 +17,18 @@ public class App {
 
         System.out.println("\nVagoes que podem levar acima de 3000 kg : \n" + vagoes.getVagoesPorPeso(3000));
 
+        Cardapio cardapioV2 = new Cardapio();
+
+        Pratos prato1 = new Pratos("Hamburguer simples", 30.50, "pão de gergelim, carne, alface, tomate e queijo cheddar");
+        cardapioV2.cadastra(prato1);
+
+        System.out.println(cardapioV2);
+
+        VagaoRestaurante restA = new VagaoRestaurante("restaurante com capacidade para 20 pessoas", 20, cardapioV2);
+        vagoes.cadastra(restA);
+
+        System.out.println(vagoes.toString());
+
+        
     }
 }
