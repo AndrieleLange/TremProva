@@ -12,6 +12,13 @@ public class VagaoRefrigerado extends Vagao {
         return temperatura;
     }
 
+    public String tipo(Vagao v){
+        if(this.equals(v)) {return "\nÉ um vagão refrigerado.\n";}
+        else{
+            return null;
+        } 
+    }
+
     @Override
     public String toString() {
         return super.toString() + " temperatura=" + temperatura + "\n";

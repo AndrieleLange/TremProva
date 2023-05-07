@@ -36,6 +36,15 @@ public class Vagao{
         return proxIdent;
     }
 
+    public String tipo(Vagao v){
+        if(this.equals(v)) {return "\nÉ um vagão comum.\n";}
+        else{
+            return null;
+        } 
+    }
+
+    
+
     @Override
     public String toString() {
         return "\n Vagao\n identificador=" + identificador + "\n descricao=" + descricao + "\n capacidadeCarga="

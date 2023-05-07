@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class App {
     public static void main(String[] args) throws Exception {
         Vagao a = new Vagao();
@@ -29,6 +31,17 @@ public class App {
 
         System.out.println(vagoes.toString());
 
+
+        //questão 6
+        //ta funcionando
+        //vinicius me explicou mas acho que ele não fez assim 
+        System.out.println(restA.tipo(restA));
+        System.out.println(a.tipo(a));
+
+        ArrayList<Vagao> vPorPeso = vagoes.getVagoesPorPeso(500);
+
         
+
+
     }
 }
