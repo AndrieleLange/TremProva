@@ -40,7 +40,11 @@ public class App {
 
         ArrayList<Vagao> vPorPeso = vagoes.getVagoesPorPeso(500);
 
-        
+        Collections.sort(vPorPeso, Comparator.comparing(Vagao::getDescricao));
+
+        for (Vagao v : vPorPeso) {
+            System.out.println(v.toString());
+        }
 
 
     }
